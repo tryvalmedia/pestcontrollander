@@ -65,12 +65,9 @@ h1 em{font-style:italic;color:#a8d9bc}
 .qc-divider{height:1px;background:var(--border);margin-bottom:18px}
 .qc-trust{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
 .qc-trust-item{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--mid)}
-.trust-strip{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 48px}
-.trust-strip-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:16px}
-.ts-item{display:flex;align-items:center;gap:11px}
-.ts-icon{width:38px;height:38px;border-radius:50%;background:var(--green-tint);border:1.5px solid var(--green-bg);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.ts-text strong{display:block;font-size:14px;font-weight:700;color:var(--navy)}
-.ts-text span{font-size:12px;color:var(--muted)}
+.trust-bar{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:13px 48px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 16px}
+.tb-item{font-size:13px;font-weight:500;color:var(--mid)}
+.tb-sep{font-size:13px;color:var(--border);font-weight:400}
 .sec{padding:72px 48px}
 .sec-inner{max-width:1160px;margin:0 auto}
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px}
@@ -149,7 +146,7 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 .ms-btn{display:flex;flex-direction:column;align-items:center;background:var(--green);color:var(--white);padding:13px 20px;border-radius:8px;font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 4px 16px rgba(45,122,79,.4)}
 .ms-btn-sub{font-size:11px;opacity:.7;margin-top:2px}
 @media(max-width:960px){.hero-inner{grid-template-columns:1fr;min-height:auto}.quote-card{display:none}.why-grid{grid-template-columns:1fr}.pests-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.guarantee-inner{flex-direction:column;text-align:center}.mobile-sticky{display:block}body{padding-bottom:70px}nav .nav-right{display:none}}
-@media(max-width:600px){nav,.hero-inner,.sec,.trust-strip,.guarantee,.bottom-cta{padding-left:20px;padding-right:20px}footer{padding:18px 20px;flex-direction:column;text-align:center}.fcopy{text-align:center}.pests-grid{grid-template-columns:1fr}.why-content{padding:32px 22px}}
+@media(max-width:600px){nav,.hero-inner,.sec,.trust-bar,.guarantee,.bottom-cta{padding-left:20px;padding-right:20px}footer{padding:18px 20px;flex-direction:column;text-align:center}.fcopy{text-align:center}.pests-grid{grid-template-columns:1fr}.why-content{padding:32px 22px}}
 </style>
 </head>
 <body>
@@ -222,13 +219,16 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
   </div>
 </div>
 
-<div class="trust-strip">
-  <div class="trust-strip-inner">
-    <div class="ts-item"><div class="ts-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#sc"/></svg></div><div class="ts-text"><strong>Licensed &amp; Insured</strong><span>Every contractor verified</span></div></div>
-    <div class="ts-item"><div class="ts-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#ck"/></svg></div><div class="ts-text"><strong>Same-Day Service</strong><span>Available in most areas</span></div></div>
-    <div class="ts-item"><div class="ts-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#dl"/></svg></div><div class="ts-text"><strong>Free Inspection</strong><span>Zero obligation to proceed</span></div></div>
-    <div class="ts-item"><div class="ts-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#st"/></svg></div><div class="ts-text"><strong>Satisfaction Guaranteed</strong><span>Re-treatment if pests return</span></div></div>
-  </div>
+<div class="trust-bar">
+  <span class="tb-item">&#x2713; Licensed &amp; Insured</span>
+  <span class="tb-sep">&middot;</span>
+  <span class="tb-item">&#x2713; Same-Day Service Available</span>
+  <span class="tb-sep">&middot;</span>
+  <span class="tb-item">&#x2713; Free Inspection &mdash; No Obligation</span>
+  <span class="tb-sep">&middot;</span>
+  <span class="tb-item">&#x2713; All 50 States</span>
+  <span class="tb-sep">&middot;</span>
+  <span class="tb-item">&#x2713; Satisfaction Guaranteed</span>
 </div>
 
 <div class="sec why">
