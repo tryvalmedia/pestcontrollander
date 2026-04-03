@@ -55,20 +55,16 @@ h1 em{font-style:italic;color:#a8d9bc}
 .hero-trust{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px}
 .ht{font-size:13px;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:6px}
 .ht-check{color:#a8d9bc;font-size:11px;font-weight:700}
-.service-card{background:var(--white);border-radius:14px;padding:24px;box-shadow:var(--shadow-lg)}
-.sc-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:3px}
-.sc-sub{font-size:13px;color:var(--muted);margin-bottom:16px}
-.service-list{display:flex;flex-direction:column;gap:5px;margin-bottom:14px}
-.svc-btn{background:var(--off);border:1.5px solid var(--border);border-radius:8px;padding:10px 13px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:all .15s;font-size:14px;font-weight:500;color:var(--text);font-family:var(--font-body);text-align:left;width:100%}
-.svc-btn:hover,.svc-btn.active{border-color:var(--green);background:var(--green-tint);color:var(--green-dk)}
-.svc-btn-left{display:flex;align-items:center;gap:9px}
-.svc-icon{font-size:15px;width:20px;text-align:center}
-.svc-urgency{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red);background:#fdf0ef;border:1px solid #f5c6c3;padding:2px 7px;border-radius:100px}
-.sc-divider{display:flex;align-items:center;gap:8px;margin:12px 0;font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase}
-.sc-divider::before,.sc-divider::after{content:'';flex:1;height:1px;background:var(--border)}
-.sc-call{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:var(--white);padding:13px;border-radius:8px;text-decoration:none;font-size:16px;font-weight:700;transition:background .2s;box-shadow:0 3px 12px rgba(45,122,79,.35)}
-.sc-call:hover{background:var(--green-lt)}
-.sc-foot{text-align:center;margin-top:8px;font-size:11px;color:var(--muted)}
+.quote-card{background:var(--white);border-radius:14px;padding:32px 28px;box-shadow:var(--shadow-lg);text-align:center}
+.qc-eyebrow{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.qc-number{display:block;font-family:var(--font-display);font-size:36px;font-weight:400;color:var(--navy);text-decoration:none;letter-spacing:-.5px;line-height:1;margin-bottom:20px;transition:color .2s}
+.qc-number:hover{color:var(--green)}
+.qc-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:var(--white);padding:16px;border-radius:9px;font-size:17px;font-weight:600;text-decoration:none;transition:all .2s;box-shadow:0 4px 18px rgba(45,122,79,.38);margin-bottom:12px}
+.qc-btn:hover{background:var(--green-lt);transform:translateY(-1px)}
+.qc-note{font-size:12px;color:var(--muted);margin-bottom:20px}
+.qc-divider{height:1px;background:var(--border);margin-bottom:18px}
+.qc-trust{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left}
+.qc-trust-item{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:500;color:var(--mid)}
 .trust-strip{background:var(--off);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:22px 48px}
 .trust-strip-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:16px}
 .ts-item{display:flex;align-items:center;gap:11px}
@@ -94,7 +90,7 @@ h1 em{font-style:italic;color:#a8d9bc}
 .pests-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .pc{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:24px 20px;transition:all .2s}
 .pc:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:var(--green)}
-.pc-emoji{font-size:28px;margin-bottom:11px;display:block}
+.pc-icon{width:40px;height:40px;margin-bottom:14px;display:block;color:var(--green);opacity:.85}
 .pc h3{font-size:16px;font-weight:600;color:var(--navy);margin-bottom:6px}
 .pc p{font-size:14px;color:var(--mid);line-height:1.7}
 .pc-badge{display:inline-flex;align-items:center;gap:4px;margin-top:10px;font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--red);background:#fdf0ef;border:1px solid #f5c6c3;padding:3px 8px;border-radius:100px}
@@ -152,20 +148,34 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 .mobile-sticky{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--white);border-top:1px solid var(--border);padding:10px 14px;box-shadow:0 -4px 20px rgba(0,0,0,.1)}
 .ms-btn{display:flex;flex-direction:column;align-items:center;background:var(--green);color:var(--white);padding:13px 20px;border-radius:8px;font-size:18px;font-weight:700;text-decoration:none;box-shadow:0 4px 16px rgba(45,122,79,.4)}
 .ms-btn-sub{font-size:11px;opacity:.7;margin-top:2px}
-@media(max-width:960px){.hero-inner{grid-template-columns:1fr;min-height:auto}.service-card{display:none}.why-grid{grid-template-columns:1fr}.pests-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.guarantee-inner{flex-direction:column;text-align:center}.mobile-sticky{display:block}body{padding-bottom:70px}nav .nav-right{display:none}}
+@media(max-width:960px){.hero-inner{grid-template-columns:1fr;min-height:auto}.quote-card{display:none}.why-grid{grid-template-columns:1fr}.pests-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.guarantee-inner{flex-direction:column;text-align:center}.mobile-sticky{display:block}body{padding-bottom:70px}nav .nav-right{display:none}}
 @media(max-width:600px){nav,.hero-inner,.sec,.trust-strip,.guarantee,.bottom-cta{padding-left:20px;padding-right:20px}footer{padding:18px 20px;flex-direction:column;text-align:center}.fcopy{text-align:center}.pests-grid{grid-template-columns:1fr}.why-content{padding:32px 22px}}
 </style>
 </head>
 <body>
 <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
-<symbol id="ph" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.12 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.16 7.84a16 16 0 006 6l1.21-1.21a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="sc" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
-<symbol id="st" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
-<symbol id="dl" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <!-- UI icons -->
+  <symbol id="ph" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.12 2.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.16 7.84a16 16 0 006 6l1.21-1.21a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="sc" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ck" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="st" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="dl" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <!-- Pest line icons -->
+  <!-- Ant: segmented body + 6 legs + antennae -->
+  <symbol id="pest-ant" viewBox="0 0 32 32"><ellipse cx="16" cy="25" rx="5" ry="6" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="15" rx="4" ry="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="12" y1="13" x2="5" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="12" y1="15" x2="4" y2="15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="12" y1="17" x2="5" y2="22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="20" y1="13" x2="27" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="20" y1="15" x2="28" y2="15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="20" y1="17" x2="27" y2="22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="14" y1="6" x2="11" y2="2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="18" y1="6" x2="21" y2="2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <!-- Cockroach: oval body + 6 legs + antennae -->
+  <symbol id="pest-roach" viewBox="0 0 32 32"><ellipse cx="16" cy="17" rx="7" ry="10" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="9" rx="4.5" ry="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="9" y1="13" x2="2" y2="10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="9" y1="17" x2="2" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="9" y1="21" x2="2" y2="25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="23" y1="13" x2="30" y2="10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="23" y1="17" x2="30" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="23" y1="21" x2="30" y2="25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="13" y1="6" x2="10" y2="1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="19" y1="6" x2="22" y2="1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <!-- Bed bug: wide flat oval, short legs, round body segments -->
+  <symbol id="pest-bedbug" viewBox="0 0 32 32"><ellipse cx="16" cy="17" rx="10" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/><ellipse cx="16" cy="10" rx="4" ry="3" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="7" y1="14" x2="2" y2="11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="7" y1="17" x2="1" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="7" y1="20" x2="2" y2="24" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="25" y1="14" x2="30" y2="11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="25" y1="17" x2="31" y2="17" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="25" y1="20" x2="30" y2="24" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M10 17 Q16 14 22 17" fill="none" stroke="currentColor" stroke-width="1.2"/></symbol>
+  <!-- Termite: teardrop abdomen, small head, wings suggested by lines -->
+  <symbol id="pest-termite" viewBox="0 0 32 32"><ellipse cx="16" cy="22" rx="6" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="11" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 10 Q6 4 3 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M20 10 Q26 4 29 8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="10" y1="19" x2="4" y2="16" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="10" y1="22" x2="3" y2="22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="22" y1="19" x2="28" y2="16" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="22" y1="22" x2="29" y2="22" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <!-- Rodent: round body, large ear, tail curl, small legs -->
+  <symbol id="pest-rodent" viewBox="0 0 32 32"><ellipse cx="17" cy="20" rx="10" ry="8" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="11" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="11" cy="7" r="3.5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="14" cy="11" r="1" fill="currentColor"/><circle cx="20" cy="11" r="1" fill="currentColor"/><path d="M27 22 Q32 18 30 26 Q28 30 24 28" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="10" y1="26" x2="7" y2="30" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="14" y1="27" x2="12" y2="31" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="22" y1="26" x2="24" y2="30" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <!-- Mosquito: thin elongated body, needle proboscis, wings -->
+  <symbol id="pest-mosquito" viewBox="0 0 32 32"><ellipse cx="16" cy="19" rx="3" ry="9" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="16" cy="9" r="3.5" fill="none" stroke="currentColor" stroke-width="1.5"/><line x1="16" y1="12" x2="16" y2="5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M13 17 Q6 11 4 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M19 17 Q26 11 28 15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="13" y1="22" x2="7" y2="27" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><line x1="19" y1="22" x2="25" y2="27" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
 </svg>
 
-<div class="topbar">&#x1F6E1;&#xFE0F; Licensed &amp; insured exterminators nationwide &mdash; <strong>same-day service available</strong></div>
+<div class="topbar">Licensed &amp; insured exterminators nationwide &mdash; <strong>same-day service available</strong></div>
 
 <nav>
   <a href="#" class="nav-brand">
@@ -196,22 +206,20 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
         <div class="ht"><span class="ht-check">&#x2713;</span> Satisfaction Guaranteed</div>
       </div>
     </div>
-    <div class="service-card">
-      <div class="sc-title">What&#x27;s bugging you?</div>
-      <div class="sc-sub">Select your pest &mdash; we&#x27;ll find the right specialist</div>
-      <div class="service-list">
-        <button class="svc-btn" onclick="selPest(this,'Ants')"><span class="svc-btn-left"><span class="svc-icon">&#x1F41C;</span> Ants</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Roaches')"><span class="svc-btn-left"><span class="svc-icon">&#x1FAB3;</span> Cockroaches</span><span class="svc-urgency">Act Fast</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Bed Bugs')"><span class="svc-btn-left"><span class="svc-icon">&#x1F6CF;&#xFE0F;</span> Bed Bugs</span><span class="svc-urgency">Act Fast</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Termites')"><span class="svc-btn-left"><span class="svc-icon">&#x1FAB5;</span> Termites</span><span class="svc-urgency">Inspect Today</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Rodents')"><span class="svc-btn-left"><span class="svc-icon">&#x1F42D;</span> Rodents</span><span class="svc-urgency">Act Fast</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Wasps')"><span class="svc-btn-left"><span class="svc-icon">&#x1F41D;</span> Wasps &amp; Bees</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Spiders')"><span class="svc-btn-left"><span class="svc-icon">&#x1F577;&#xFE0F;</span> Spiders</span></button>
-        <button class="svc-btn" onclick="selPest(this,'Other Pest')"><span class="svc-btn-left"><span class="svc-icon">&#x1F50D;</span> Other Pest</span></button>
+    <div class="quote-card">
+      <div class="qc-eyebrow">Free Quote &mdash; No Obligation</div>
+      <a href="tel:+12097090593" class="qc-number">(209) 709-0593</a>
+      <a href="tel:+12097090593" class="qc-btn">
+        <svg width="18" height="18"><use href="#ph"/></svg>Call Now &mdash; It&#x27;s Free
+      </a>
+      <p class="qc-note">A real person answers &middot; 7 days a week</p>
+      <div class="qc-divider"></div>
+      <div class="qc-trust">
+        <div class="qc-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#sc"/></svg>Licensed &amp; Insured</div>
+        <div class="qc-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#ck"/></svg>Same-Day Available</div>
+        <div class="qc-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#dl"/></svg>Free Inspection</div>
+        <div class="qc-trust-item"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><use href="#st"/></svg>All 50 States</div>
       </div>
-      <div class="sc-divider">or call directly</div>
-      <a href="tel:+12097090593" class="sc-call" id="scCallBtn"><svg width="16" height="16"><use href="#ph"/></svg><span id="scCallText">(209) 709-0593 &mdash; Free Quote</span></a>
-      <div class="sc-foot">Free &middot; No obligation &middot; Available 7 days a week</div>
     </div>
   </div>
 </div>
@@ -248,12 +256,12 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
     <h2 class="sec-title">What Are You Dealing With?</h2>
     <p class="sec-sub">Our network handles every common household pest &mdash; fast, effectively, and with a satisfaction guarantee.</p>
     <div class="pests-grid">
-      <div class="pc"><span class="pc-emoji">&#x1F41C;</span><h3>Ants</h3><p>Carpenter ants destroy wood from the inside out. Fire ants sting and spread fast. A colony can number in the thousands.</p></div>
-      <div class="pc"><span class="pc-emoji">&#x1FAB3;</span><h3>Cockroaches</h3><p>Roaches spread bacteria, trigger allergies, and multiply fast. One sighting usually means hundreds are hiding nearby.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
-      <div class="pc"><span class="pc-emoji">&#x1F6CF;&#xFE0F;</span><h3>Bed Bugs</h3><p>Spread room to room within weeks. Nearly impossible to eliminate without professional heat or chemical treatment.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
-      <div class="pc"><span class="pc-emoji">&#x1FAB5;</span><h3>Termites</h3><p>Cause over $5 billion in property damage each year. Most homeowners don&#x27;t know they have them until it&#x27;s serious.</p><span class="pc-badge">&#x26A0; Inspect Today</span></div>
-      <div class="pc"><span class="pc-emoji">&#x1F42D;</span><h3>Rodents</h3><p>Mice and rats chew wiring, contaminate food, and carry disease. They can enter through gaps as small as a dime.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
-      <div class="pc"><span class="pc-emoji">&#x1F99F;</span><h3>Mosquitoes</h3><p>Professional yard treatments eliminate breeding grounds and provide season-long protection for your outdoor space.</p></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-ant"/></svg><h3>Ants</h3><p>Carpenter ants destroy wood from the inside out. Fire ants sting and spread fast. A colony can number in the thousands.</p></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-roach"/></svg><h3>Cockroaches</h3><p>Roaches spread bacteria, trigger allergies, and multiply fast. One sighting usually means hundreds are hiding nearby.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-bedbug"/></svg><h3>Bed Bugs</h3><p>Spread room to room within weeks. Nearly impossible to eliminate without professional heat or chemical treatment.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-termite"/></svg><h3>Termites</h3><p>Cause over $5 billion in property damage each year. Most homeowners don&#x27;t know they have them until it&#x27;s serious.</p><span class="pc-badge">&#x26A0; Inspect Today</span></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-rodent"/></svg><h3>Rodents</h3><p>Mice and rats chew wiring, contaminate food, and carry disease. They can enter through gaps as small as a dime.</p><span class="pc-badge">&#x26A0; Act Quickly</span></div>
+      <div class="pc"><svg class="pc-icon" viewBox="0 0 32 32"><use href="#pest-mosquito"/></svg><h3>Mosquitoes</h3><p>Professional yard treatments eliminate breeding grounds and provide season-long protection for your outdoor space.</p></div>
     </div>
   </div>
 </div>
@@ -338,7 +346,6 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 </div>
 
 <script>
-function selPest(btn,pest){document.querySelectorAll('.svc-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.getElementById('scCallText').textContent='Call About '+pest+' \u2014 Free';}
 function tfaq(el){const a=el.nextElementSibling,ic=el.querySelector('.fi-icon'),open=a.classList.contains('open');document.querySelectorAll('.fi-a').forEach(x=>x.classList.remove('open'));document.querySelectorAll('.fi-icon').forEach(x=>x.classList.remove('open'));if(!open){a.classList.add('open');ic.classList.add('open');}}
 window.addEventListener('load',function(){setTimeout(function(){fetch('https://ipwho.is/').then(r=>r.json()).then(d=>{if(d.city&&d.region_code)document.getElementById('heroLoc').textContent='Exterminators in '+d.city+', '+d.region_code;}).catch(()=>{});},1500);});
 </script>
