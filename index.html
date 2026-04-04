@@ -12,6 +12,7 @@ fbq('init', '1613219566648709');fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1613219566648709&ev=PageView&noscript=1"/></noscript>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preload" as="image" href="hero.jpg" fetchpriority="high">
 <title>Free Pest Control Quote — Same-Day Exterminators Near You | PestControlQuotesNow.com</title>
 <link rel="canonical" href="https://PestControlQuotesNow.com/">
 <meta name="robots" content="index, follow">
@@ -147,6 +148,23 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 .ms-btn-sub{font-size:11px;opacity:.7;margin-top:2px}
 @media(max-width:960px){.hero-inner{grid-template-columns:1fr;min-height:auto}.quote-card{display:none}.why-grid{grid-template-columns:1fr}.pests-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.reviews-grid{grid-template-columns:1fr}.guarantee-inner{flex-direction:column;text-align:center}.mobile-sticky{display:block}body{padding-bottom:70px}nav .nav-right{display:none}}
 @media(max-width:600px){nav,.hero-inner,.sec,.trust-bar,.guarantee,.bottom-cta{padding-left:20px;padding-right:20px}footer{padding:18px 20px;flex-direction:column;text-align:center}.fcopy{text-align:center}.pests-grid{grid-template-columns:1fr}.why-content{padding:32px 22px}}
+
+/* ── Additional mobile fixes ── */
+@media(max-width:480px){
+  nav,.hero-inner,.sec,.trust-bar,.guarantee,.bottom-cta { padding-left:16px; padding-right:16px; }
+  .hero-inner { padding-top:80px; }
+  h1,.hero-title { font-size:clamp(26px,8vw,36px); }
+  .cta-btn, .mobile-sticky a, button[type=submit] { min-height:48px; font-size:15px; }
+  .pests-grid { grid-template-columns:1fr 1fr; }
+  .why-photo { min-height:240px; }
+  .why-photo img { min-height:240px; }
+}
+/* Tap target floor across all mobile */
+@media(max-width:960px){
+  a,button { min-height:40px; }
+  .cta-btn { min-height:48px; display:flex; align-items:center; justify-content:center; }
+}
+
 </style>
 </head>
 <body>
@@ -187,7 +205,7 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 </nav>
 
 <div class="hero">
-  <img src="hero.jpg" alt="Licensed pest control technician at work" class="hero-img" loading="eager">
+  <img src="hero.jpg" alt="Licensed pest control technician at work" class="hero-img" loading="eager" fetchpriority="high">
   <div class="hero-overlay"></div>
   <div class="hero-inner">
     <div>
@@ -234,7 +252,7 @@ footer{background:#07131a;padding:22px 48px;display:flex;align-items:center;just
 <div class="sec why">
   <div class="sec-inner">
     <div class="why-grid">
-      <div class="why-photo"><img src="technician.jpg" alt="Licensed pest control technician inspecting a home"></div>
+      <div class="why-photo"><img src="technician.jpg" alt="Licensed pest control technician inspecting a home" loading="lazy" width="600" height="440"></div>
       <div class="why-content">
         <div class="eyebrow">Why Choose Us</div>
         <h2 class="sec-title">You&#x27;re letting someone into your home. Trust matters.</h2>
